@@ -23,3 +23,28 @@ A unit of work tracks everything that is done during the business transaction th
 When finished, she discovers everything that needs to be done to change the persistence layer as a result of the work.
 
 ![plot](./img/Captura%20de%20tela_20221201_215556.png)
+
+# Implementation: 
+
+
+## Creating the IRepository interface:
+
+![plot](./img/Irepository.png)
+
+## Implementing the concrete class but with generic methods:
+
+![plot](./img/ConcreteRepository.png)
+
+## Creating the IUnitOfWOrk interface:
+
+![plot](./img/iunitOfWork.png)
+
+
+
+## Implementing the concrete unitOfWork:
+
+![plot](./img/concreteUnitOfWork.png)
+
+As opposed to directly accessing the data access layer from the controllers using these two patterns together, we are isolating the controllers from this dependency and this allows switching and this allows switching this layer and facilitates unit testing and also allows switching the permanence frame with more ease.
+
+![plot](./img/testMockUnitOfWork.png)
