@@ -1,4 +1,4 @@
-# Data Paging 
+# Data Pagination
 
 Data Pagination is a good practice pattern used in APIs, when we implement a method
 Get is not advisable to return all the data present in the database. Imagine that the return is too big so you can crash your application layer.
